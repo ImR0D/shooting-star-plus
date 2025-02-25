@@ -1,0 +1,33 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+/* 
+    Imported Fonts:
+    font-family: "Inter", serif;
+
+*/
+
+
+:root {
+    --common-text-font: 1em;
+    --common-text-family: "Inter", serif;
+    --highlight-sm-title-font: 1.75em;
+    --highlight-md-title-font: 2em;
+    --highlight-gt-title-font: 3em;
+}
+
+
+* {
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    border: none;
+}
+
+body {
+    background-color: #000;
+    color: #fff;
+    font-family: var(--common-text-family);
+}
+
+main {
+    padding: 5% 5%;
+}
