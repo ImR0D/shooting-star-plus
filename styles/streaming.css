@@ -61,6 +61,12 @@ img {
     pointer-events: none;
 }
 
+button {
+    user-select: none; 
+    pointer-events: fill;
+    cursor: pointer;
+}
+
 .signature {
     flex-direction: column;
     user-select: none;
@@ -75,7 +81,6 @@ img {
 }
 
 .signature__combo {
-    user-select: all;
     display: flex;
     flex-direction: column;
     width: 50%;
@@ -109,6 +114,10 @@ img {
     font-weight: 300;
 }
 
+.signature__combo__button-highlighted:hover {
+    background-color: #2050F0;
+}
+
 .signature__combo__button-unhighlighted {
     align-self: center;
     color: #fff;
@@ -121,6 +130,10 @@ img {
     font-family: var(--common-text-family);
     font-size: var(--common-text-font);
     font-weight: 300;
+}
+
+.signature__combo__button-unhighlighted:hover {
+    background-color: #009F2090;
 }
 
 .signature__combo__text-term {
