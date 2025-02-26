@@ -5,7 +5,6 @@
 
 */
 
-
 :root {
     --common-text-font: 1em;
     --common-text-family: "Inter", serif;
@@ -14,12 +13,17 @@
     --highlight-gt-title-font: 3em;
 }
 
-
 * {
     margin: 0;
     padding: 0;
     text-decoration: none;
     border: none;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-snap-type: y mandatory;
+    scroll-behavior: smooth;
 }
 
 body {
@@ -28,6 +32,154 @@ body {
     font-family: var(--common-text-family);
 }
 
+h1 {
+    font-family: var(--highlight-gt-title-font);
+}
+
 main {
-    padding: 5% 5%;
+    padding: 5% 12%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    row-gap: 50vh;
+}
+
+section {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    text-align: center;
+    justify-content: center;
+    scroll-snap-align: center;
+    scroll-snap-stop: end;
+    
+}
+
+.signature {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+}
+
+.signature__bg {
+    background-image: url("../assets/pics/Background.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.watch {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: center;
+    align-items: center;
+    text-align: left;
+    gap: 1.5em;
+}
+
+.watch__your-own-way {
+    display: flex;
+    flex-direction: column;
+    word-spacing: 0.2em;
+}
+
+.watch__your-own-way h1 {
+    font-family: var(--common-text-family);
+    font-size: var(--highlight-gt-title-font);
+    line-height: 150%;
+}
+
+.watch__your-own-way p {
+    opacity: 80%;
+    font-weight: 300;
+}
+
+.sign {
+    display: flex;
+    flex-direction: row;
+    gap: 2vh;
+    text-align: left;
+    justify-content: center;
+    align-items: center;
+}
+
+.sign_combo-plus {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.sign_combo-plus p {
+    font-weight: 300;
+    opacity: 80%;
+}
+
+.sign_combo-plus_button {
+    background-color: #167BF7;
+    color: #fff;
+    padding: 16px;
+    border-radius: 8px;
+    font-family: var(--common-text-font);
+    font-size: 16px;
+    width: 32%;
+}
+
+.download {
+    display: flex;
+    align-items: center;
+    text-align: left;
+    flex-direction: row-reverse;
+}
+
+.download__app {
+    display: flex;
+    flex-direction: column;
+}
+
+.download__app__highlight {
+    font-family: var(--common-text-family);
+    font-size: var(--highlight-gt-title-font);
+}
+
+.download__app__description {
+    font-family: var(--common-text-family);
+}
+
+.download__courses {
+    width: 50%;
+}
+
+.platforms {
+    display: flex;
+    flex-direction: column;
+    gap: 4vh;
+    text-align: center;
+}
+
+.platforms__highlight {
+    font-size: var(--highlight-gt-title-font);
+    font-weight: 600;
+    word-spacing: 4px;
+    line-height: 120%;
+}
+
+.platforms__devices {
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: row;
+    padding-top: 1.8vh;
+    gap: 37px;
+}
+
+.platforms__devices__tv,
+.platforms__devices__pc,
+.platforms__devices__cltb {
+    text-align: center;
+    align-items: center;
+    align-content: center;
+    justify-content: center;
+    font-size: var(--highlight-md-title-font);
+    font-weight: 600;
+    line-height: 38px;
+    padding: 5px;
 }
