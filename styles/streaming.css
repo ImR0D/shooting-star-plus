@@ -233,6 +233,7 @@ img {
     flex-direction: row;
     padding-top: 1.8vh;
     gap: 37px;
+    justify-content: center;
 }
 
 .platforms__devices__tv,
