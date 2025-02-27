@@ -237,6 +237,21 @@ button {
   flex-direction: column;
 }
 
+.download__app__links {
+    margin-top: 4rem;
+    display: flex;
+    gap: 1rem;
+}
+
+.download__app__links a img {
+    border-radius: 1em;
+}
+
+.download__app__links a:hover {
+    filter: drop-shadow(0 0 0.5em #AAA);
+    outline: none;
+}
+
 .download__app__highlight {
   font-family: var(--common-text-family);
   font-size: var(--highlight-gt-title-font);
@@ -251,7 +266,7 @@ button {
 }
 
 .download__app__preview {
-    border-radius: 100%;
+  border-radius: 100%;
 }
 
 .platforms {
@@ -327,4 +342,39 @@ footer {
 
 .advertising_copyright p:first-child {
   line-height: 4.5em;
+}
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+    body {
+        background-color: #AFBFCF;
+    }
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
+    body {
+        background-color: #CFAFEF;
+    }
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+    body {
+        background-color: #C0C000;
+    }
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+    body {
+        background-color: #303030;
+    }
+}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+    body {
+        background-color: #000000;
+    }
 }
